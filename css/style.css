@@ -4,8 +4,38 @@
 }
 
 body{
+    z-index: 1;
+    margin: 0;
     background-image: url(../images/stone.png);
     background-color: rgb(37, 37, 37);
+}
+
+#dirt{
+    width: 100vw;
+    height: 50px;
+    z-index: 2;
+    background-image: url(../images/dirt.PNG);
+    background-size: 50px;
+    background-repeat: repeat-x;
+    margin-bottom: 4em;
+    margin-top: 0;
+}
+#dirt2{
+    width: 100vw;
+    height: 100px;
+    z-index: 2;
+    background-image: url(../images/dirt2.PNG);
+    background-size: 50px;
+    background-repeat: repeat;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+#dirt2 p{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    padding-top: 30px;
+    color: white;
 }
 
 #body-grid{
@@ -18,15 +48,23 @@ body{
 #button1{
     width: 50px;
     height: 50px;
+    margin-top: 2em;
 }
 #button1:hover{
-    animation: rotate1 0.8s;
+    width: 60px;
+    height: 60px;
 }
-#butt
+
+.spin1{
+    animation: rotate1 0.3s;
+}
+.spin2{
+    animation: rotate2 0.5s;
+}
 
 #mcImage{
-    max-height: 400px;
-    width: 400px;
+    max-height: 500px;
+    /* width: 400px; */
 
 }
 
@@ -43,3 +81,16 @@ body{
     100% {transform: rotate(360deg);
         transform-origin: center center;}
 }
+
+@keyframes rotate2{
+    100% {transform: rotate(360deg);
+            transform-origin: center center;}
+}
+@-moz-keyframes rotate2{
+    100% {transform: rotate(360deg);
+        transform-origin: center center;}
+}
+@-webkit-keyframes rotate2{
+    100% {transform: rotate(360deg);
+        transform-origin: center center;}
+    }
